@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+<body>
+    <header class="header" style="background-color: black;">
+        <img src="./images/logo.jpg" alt="">
+        <nav class="navbar">
+            <a href="./index.html">home</a>
+            <a href="./carseller.html">Car Seller Registration</a>
+            <a href="./sellerpage.html">Seller Page</a>
+            <a href="./search.html">Search</a>
+            <a href="./aboutus.html">About Us</a>
+        </nav>
+        <a href="#" id="menu-bars" class="fas fa-bars"></a>
+    </header>
+    <div class="container">
+        <h1>Add Car</h1>
+        <nav>
+          <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="add_car.html">Add Car</a></li>
+          </ul>
+        </nav>
+      </div>
+  <div class="container">
+    <form id="add-car-form" action="add_car.php" method="post">
+      <label for="make">Make:</label>
+      <input type="text" id="make" name="make" required>
+      
+      <label for="model">Model:</label>
+      <input type="text" id="model" name="model" required>
+      
+      <label for="year">Year:</label>
+      <input type="number" id="year" name="year" required>
+      
+      <label for="mileage">Mileage:</label>
+      <input type="number" id="mileage" name="mileage" required>
+      
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+      
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" required>
+      
+      <button type="submit">Add Car</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

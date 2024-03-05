@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header" style="background-color: black;">
+        <img src="./images/logo.jpg" alt="">
+        <nav class="navbar">
+            <a href="./index.html">home</a>
+            <a href="./carseller.html">Car Seller Registration</a>
+            <a href="./sellerpage.html">Seller Page</a>
+            <a href="./search.html">Search</a>
+            <a href="./aboutus.html">About Us</a>
+        </nav>
+        <a href="#" id="menu-bars" class="fas fa-bars"></a>
+    </header>
+    <div class="container">
+        <h1>Car Search</h1>
+        <form id="search-form" action="search.php" method="post">
+            
+          <label for="model">Model:</label>
+          <input type="text" id="model" name="model">
+          
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location">
+          
+          <button type="submit">Search</button>
+        </form>
+        <div id="search-results"></div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
